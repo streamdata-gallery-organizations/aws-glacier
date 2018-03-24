@@ -1,9 +1,9 @@
-title: Streamdata Gallery
-url: aws-glacier.api.streamdata.gallery
+title: Streamdata Gallery AWS Glacier
+url: aws-glacier.streamdata.gallery
 tag: AWS Glacier
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery-organizations
+github_user: streamdata-gallery
 github_repo: aws-glacier
 github_branch: master
 collections:
