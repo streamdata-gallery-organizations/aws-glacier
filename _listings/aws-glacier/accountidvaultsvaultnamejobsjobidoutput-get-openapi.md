@@ -173,8 +173,8 @@ paths:
         type: string
       - in: query
         name: ArchiveSizeInBytes
-        description: "For an ArchiveRetrieval job, this is the size in bytes of the
-          archive being\t\t\t\t\t\t\trequested for download"
+        description: For an ArchiveRetrieval job, this is the size in bytes of the
+          archive beingrequested for download
         type: string
       - in: query
         name: Completed
@@ -190,19 +190,19 @@ paths:
         type: string
       - in: query
         name: EndDate
-        description: "The end of the date range in UTC for vault inventory retrieval
-          that includes \t\t\t\t\t\t\tarchives created before this date"
+        description: The end of the date range in UTC for vault inventory retrieval
+          that includes archives created before this date
         type: string
       - in: query
         name: Format
-        description: "The output format for the vault inventory list, which is set
-          by the  \t\t\t\t\t\t\tInitiate Job (POST jobs) request  \t\t\t\t\t\t\twhen
-          initiating a job to retrieve a vault inventory"
+        description: The output format for the vault inventory list, which is set
+          by the  Initiate Job (POST jobs) request  when initiating a job to retrieve
+          a vault inventory
         type: string
       - in: query
         name: InventorySizeInBytes
-        description: "For an InventoryRetrieval job, this is the size in bytes of
-          the inventory\t\t\t\t\t\t\trequested for download"
+        description: For an InventoryRetrieval job, this is the size in bytes of the
+          inventoryrequested for download
         type: string
       - in: query
         name: JobDescription
@@ -214,20 +214,20 @@ paths:
         type: string
       - in: query
         name: Limit
-        description: "Specifies the maximum number of inventory items returned per
-          vault inventory \t\t\t\t\t\t\tretrieval request"
+        description: Specifies the maximum number of inventory items returned per
+          vault inventory retrieval request
         type: string
       - in: query
         name: Marker
-        description: "An opaque string that represents where to continue pagination
-          of the vault inventory\t\t\t\t\t\t\tretrieval results"
+        description: An opaque string that represents where to continue pagination
+          of the vault inventoryretrieval results
         type: string
       - in: query
         name: RetrievalByteRange
-        description: "The retrieved byte range for archive retrieval jobs in the form\t\t\t\t\t\t\t\tStartByteValue-EndByteValue\t\t\t\t\t\t\tIf
-          you dont specify a range in the archive retrieval, then the whole\t\t\t\t\t\t\tarchive
-          is retrieved; also StartByteValue equals 0,\t\t\t\t\t\t\tand EndByteValue
-          equals the size of the archive\t\t\t\t\t\t\tminus 1"
+        description: The retrieved byte range for archive retrieval jobs in the formStartByteValue-EndByteValueIf
+          you dont specify a range in the archive retrieval, then the wholearchive
+          is retrieved; also StartByteValue equals 0,and EndByteValue equals the size
+          of the archiveminus 1
         type: string
       - in: query
         name: SHA256TreeHash
@@ -235,18 +235,18 @@ paths:
         type: string
       - in: query
         name: SNSTopic
-        description: "An Amazon Simple Notification Service (Amazon SNS) topic that
-          receives\t\t\t\t\t\t\tnotification"
+        description: An Amazon Simple Notification Service (Amazon SNS) topic that
+          receivesnotification
         type: string
       - in: query
         name: StartDate
-        description: "The start of the date range in UTC for vault inventory retrieval
-          that includes archives\t\t\t\t\t\t\tcreated on or after this date"
+        description: The start of the date range in UTC for vault inventory retrieval
+          that includes archivescreated on or after this date
         type: string
       - in: query
         name: StatusCode
-        description: "The status code can be InProgress, Succeeded, or\t\t\t\t\t\t\t\tFailed,
-          and indicates the status of the job"
+        description: The status code can be InProgress, Succeeded, orFailed, and indicates
+          the status of the job
         type: string
       - in: query
         name: StatusMessage
@@ -258,8 +258,8 @@ paths:
         type: string
       - in: query
         name: VaultARN
-        description: "The Amazon Resource Name (ARN) of the vault from which the archive\t\t\t\t\t\t\tretrieval
-          was requested"
+        description: The Amazon Resource Name (ARN) of the vault from which the archiveretrieval
+          was requested
         type: string
       responses:
         200:
@@ -313,8 +313,8 @@ paths:
         type: string
       - in: query
         name: InventoryDate
-        description: "The UTC date and time of the last inventory for the vault that
-          was completed after\t\t\t\t\t\t\tchanges to the vault"
+        description: The UTC date and time of the last inventory for the vault that
+          was completed afterchanges to the vault
         type: string
       - in: query
         name: SHA256TreeHash
@@ -326,8 +326,8 @@ paths:
         type: string
       - in: query
         name: VaultARN
-        description: "The Amazon Resource Name (ARN) resource from which the archive\t\t\t\t\t\t\t\tretrieval
-          was requested"
+        description: The Amazon Resource Name (ARN) resource from which the archiveretrieval
+          was requested
         type: string
       responses:
         200:
