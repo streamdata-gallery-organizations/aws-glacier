@@ -11,13 +11,13 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: AWS Glacier
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-29"
+modified: "2018-08-29"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Amazon Glacier API Upload  Archive
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Upload  Archive
+  x-api-slug: accountidvaultsvaultnamearchives-post
   description: "DescriptionThis operation adds an archive to a vault. For a successful
     upload, your data is durably\n\t\t\tpersisted. In response, Amazon Glacier returns
     the archive ID in the\n\t\t\t\tx-amz-archive-id header of the response. You should
@@ -41,13 +41,14 @@ apis:
     can optionally include a description of the archive."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/archives
-  tags: Archives
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamearchives-post-openapi.md
-- name: Amazon Glacier API Get  Data  Retrieval  Policy
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Get  Data  Retrieval  Policy
+  x-api-slug: accountidpoliciesdataretrieval-get
   description: "DescriptionThis operation returns the current data retrieval policy
     for the account and region specified in the\n\t\t\t\tGET request. For more information
     about data retrieval policies, see\n\t\t\tAmazon Glacier Data Retrieval Policies.RequestsTo
@@ -55,25 +56,27 @@ apis:
     retrieval\n\t\t\tpolicy URI as shown in the following syntax example."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/policies/data-retrieval
-  tags: Data  Retrieval  Policies
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidpoliciesdataretrieval-get-openapi.md
-- name: Amazon Glacier API Purchase  Provisioned  Capacity
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Purchase  Provisioned  Capacity
+  x-api-slug: accountidprovisionedcapacity-post
   description: |-
     Purchase Provisioned Capacity (POST provisioned-capacity)This operation purchases a provisioned capacity unit for an AWS account.RequestsTo purchase provisioned capacity unit for an AWS account send an HTTP POST
              request to the provisioned-capacity URI.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/provisioned-capacity
-  tags: Purchase Provisioned Capacity
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidprovisionedcapacity-post-openapi.md
-- name: Amazon Glacier API Set  Data  Retrieval  Policy
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Set  Data  Retrieval  Policy
+  x-api-slug: accountidpoliciesdataretrieval-put
   description: "DescriptionThis operation sets and then enacts a data retrieval policy
     in the region specified in the PUT request. You can set one\n\t\t\tpolicy per
     region for an AWS account. The policy is enacted within a few minutes of a\n\t\t\tsuccessful
@@ -82,13 +85,14 @@ apis:
     retrieval policies, see Amazon Glacier Data Retrieval Policies. Requests"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/policies/data-retrieval
-  tags: Data  Retrieval  Policy
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidpoliciesdataretrieval-put-openapi.md
-- name: Amazon Glacier API Describe  Job
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Describe  Job
+  x-api-slug: accountidvaultsvaultnamejobsjobid-get
   description: "DescriptionThis operation returns information about a job you previously
     initiated, including the job\n\t\t\tinitiation date, the user who initiated the
     job, the job status code/message and the\n\t\t\tAmazon Simple Notification Service
@@ -101,13 +105,14 @@ apis:
     completes the job. Requests"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountID}/vaults/{VaultName}/jobs/{JobID}
-  tags: Jobs
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamejobsjobid-get-openapi.md
-- name: Amazon Glacier API Get  Job  Output
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Get  Job  Output
+  x-api-slug: accountidvaultsvaultnamejobsjobidoutput-get
   description: "DescriptionThis operation downloads the output of the job you initiated
     using Initiate Job (POST jobs). Depending\n\t\t\ton the job type you specified
     when you initiated the job, the output will be either the\n\t\t\tcontent of an
@@ -131,13 +136,14 @@ apis:
     after Amazon Glacier\n\t\t\tcompletes the job.Requests"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/jobs/{JobID}/output
-  tags: Jobs
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamejobsjobidoutput-get-openapi.md
-- name: Amazon Glacier API Initiate  Job
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Initiate  Job
+  x-api-slug: accountidvaultsvaultnamejobs-post
   description: "Initiate Job (POST jobs)This operation initiates a job of the specified
     type, which can be an archive retrieval or vault inventory retrieval.Initializing
     a Data Retrieval Job Retrieving an archive or a vault inventory are asynchronous
@@ -170,13 +176,14 @@ apis:
     For more information, see Set Vault Notification Configuration (PUT\n\t\tnotification-configuration)."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/jobs
-  tags: Jobs
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamejobs-post-openapi.md
-- name: Amazon Glacier API List  Jobs
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - List  Jobs
+  x-api-slug: accountidvaultsvaultnamejobs-get
   description: "DescriptionThis operation lists jobs for a vault including jobs that
     are in-progress and jobs that have\n\t\t\trecently finished. \n\t\t\tNoteAmazon
     Glacier retains recently completed jobs for a period before deleting them; however,\n\t\t\t\t\tit
@@ -209,69 +216,75 @@ apis:
     that were not completed\n\t\t\t(false).Requests"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/jobs
-  tags: Jobs
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamejobs-get-openapi.md
-- name: Amazon Glacier API Abort  Multipart  Upload
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Abort  Multipart  Upload
+  x-api-slug: accountidvaultsvaultnamemultipartuploadsuploadid-delete
   description: "DescriptionThis multipart upload operation aborts a multipart upload
     identified by the upload\n\t\t\tID"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/multipart-uploads/{uploadID}
-  tags: Multipart Uploads
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamemultipartuploadsuploadid-delete-openapi.md
-- name: Amazon Glacier API Complete  Multipart  Upload
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Complete  Multipart  Upload
+  x-api-slug: accountidvaultsvaultnamemultipartuploadsuploadid-post
   description: "DescriptionYou call this multipart upload operation to inform Amazon
     Glacier that all the archive parts have\n\t\t\tbeen uploaded and Amazon Glacier
     can now assemble the archive from the uploaded parts"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/multipart-uploads/{uploadID}
-  tags: Multipart Uploads
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamemultipartuploadsuploadid-post-openapi.md
-- name: Amazon Glacier API List  Parts
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - List  Parts
+  x-api-slug: accountidvaultsvaultnamemultipartuploadsuploadid-get
   description: "DescriptionThis multipart upload operation lists the parts of an archive
     that have been uploaded in a\n\t\t\tspecific multipart upload identified by an
     upload ID"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/multipart-uploads/{uploadID}
-  tags: Parts
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamemultipartuploadsuploadid-get-openapi.md
-- name: Amazon Glacier API List  Multipart  Uploads
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - List  Multipart  Uploads
+  x-api-slug: accountidvaultsvaultnamemultipartuploads-get
   description: DescriptionThis multipart upload operation lists in-progress multipart
     uploads for the specified vault
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/multipart-uploads
-  tags: Multipart Uploads
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamemultipartuploads-get-openapi.md
-- name: Amazon Glacier API Upload  Part
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Upload  Part
+  x-api-slug: accountidvaultsvaultnamemultipartuploadsuploadid-put
   description: DescriptionThis multipart upload operation uploads a part of an archive
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/multipart-uploads/{uploadID}
-  tags: Parts
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamemultipartuploadsuploadid-put-openapi.md
-- name: Amazon Glacier API Abort  Vault  Lock
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Abort  Vault  Lock
+  x-api-slug: accountidvaultsvaultnamelockpolicy-delete
   description: "DescriptionThis operation aborts the vault locking process if the
     vault lock is not in the\n\t\t\t\tLocked state. If the vault lock is in the Locked
     state\n\t\t\twhen this operation is requested, the operation returns an\n\t\t\t\tAccessDeniedException
@@ -288,13 +301,14 @@ apis:
     to the URI\n\t\t\tof the vault's lock-policy subresource."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{vaultName}/lock-policy
-  tags: Vault Locks
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamelockpolicy-delete-openapi.md
-- name: Amazon Glacier API Create  Vault
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Create  Vault
+  x-api-slug: accountidvaultsvaultname-put
   description: "DescriptionThis operation creates a new vault with the specified name.&nbsp;
     The name of the vault must be\n\t\t\tunique within a region for an AWS account.
     You can create up to 1,000 vaults per\n\t\t\taccount. For information on creating
@@ -306,13 +320,14 @@ apis:
     effect after the first time Amazon Glacier creates the specified vault.Requests"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}
-  tags: Vaults
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultname-put-openapi.md
-- name: Amazon Glacier API Complete  Vault  Lock
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Complete  Vault  Lock
+  x-api-slug: accountidvaultsvaultnamelockpolicylockid-post
   description: |-
     DescriptionThis operation completes the vault locking process by transitioning the vault lock from
              the InProgress state to the Locked state, which causes the vault
@@ -328,13 +343,14 @@ apis:
              of the vault's lock-policy subresource with a valid lock ID.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{vaultName}/lock-policy/{lockId}
-  tags: Vault Locks
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamelockpolicylockid-post-openapi.md
-- name: Amazon Glacier API Delete  Vault
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Delete  Vault
+  x-api-slug: accountidvaultsvaultname-delete
   description: "DescriptionThis operation deletes a vault. Amazon Glacier will delete
     a vault only if there are no archives\n\t\t\tin the vault as per the last inventory
     and there have been no writes to the vault since\n\t\t\tthe last inventory. If
@@ -349,13 +365,14 @@ apis:
     a vault, send a DELETE request to the vault resource URI."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}
-  tags: Vaults
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultname-delete-openapi.md
-- name: Amazon Glacier API Delete  Vault  Access  Policy
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Delete  Vault  Access  Policy
+  x-api-slug: accountidvaultsvaultnameaccesspolicy-delete
   description: "DescriptionThis operation deletes the access policy associated with
     the specified vault. The\n\t\t\toperation is eventually consistent&#8212;that
     is, it might take some time for Amazon Glacier to\n\t\t\tcompletely remove the
@@ -368,13 +385,14 @@ apis:
     access-policy subresource."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{vaultName}/access-policy
-  tags: Vault Access Policies
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnameaccesspolicy-delete-openapi.md
-- name: Amazon Glacier API Delete  Vault  Notifications
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Delete  Vault  Notifications
+  x-api-slug: accountidvaultsvaultnamenotificationconfiguration-delete
   description: "DescriptionThis operation deletes the notification configuration set
     for a vault \n\t\t\tSet Vault Notification Configuration (PUT\n\t\tnotification-configuration).
     The operation is\n\t\t\teventually consistent&#8212;that is, it might take some
@@ -384,13 +402,14 @@ apis:
     a DELETE request to the\n\t\t\tvault's notification-configuration subresource."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/notification-configuration
-  tags: Vault Notifications
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamenotificationconfiguration-delete-openapi.md
-- name: Amazon Glacier API Describe  Vault
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Describe  Vault
+  x-api-slug: accountidvaultsvaultname-get
   description: "DescriptionThis operation returns information about a vault, including
     the vault Amazon Resource Name\n\t\t\t(ARN), the date the vault was created, the
     number of archives contained within the\n\t\t\tvault, and the total size of all
@@ -403,13 +422,14 @@ apis:
     to the URI of the specific\n\t\t\tvault resource."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}
-  tags: Vaults
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultname-get-openapi.md
-- name: Amazon Glacier API Get  Vault  Access  Policy
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Get  Vault  Access  Policy
+  x-api-slug: accountidvaultsvaultnameaccesspolicy-get
   description: "DescriptionThis operation retrieves the access-policy subresource
     set on the\n\t\t\tvault&#8212;for more information on setting this subresource,
     see Set Vault Access Policy (PUT access-policy). If\n\t\t\tthere is no access
@@ -419,13 +439,14 @@ apis:
     send an HTTP GET request to\n\t\t\tthe URI of the vault's access-policy subresource."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{vaultName}/access-policy
-  tags: Vault Access Policies
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnameaccesspolicy-get-openapi.md
-- name: Amazon Glacier API Get  Vault  Lock
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Get  Vault  Lock
+  x-api-slug: accountidvaultsvaultnamelockpolicy-get
   description: "DescriptionThis operation retrieves the following attributes from
     the lock-policy\n\t\t\tsubresource set on the specified vault: \n\t\t\tThe vault
     lock policy set on the vault.The state of the vault lock, which is either InProgess
@@ -444,13 +465,14 @@ apis:
     syntax example."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{vaultName}/lock-policy
-  tags: Vault Locks
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamelockpolicy-get-openapi.md
-- name: Amazon Glacier API Get  Vault  Notifications
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Get  Vault  Notifications
+  x-api-slug: accountidvaultsvaultnamenotificationconfiguration-get
   description: "DescriptionThis operation retrieves the notification-configuration
     subresource set on the\n\t\t\tvault (see Set Vault Notification Configuration
     (PUT\n\t\tnotification-configuration). If notification configuration for a\n\t\t\tvault
@@ -460,13 +482,14 @@ apis:
     to\n\t\t\tthe URI of a vault's notification-configuration subresource."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/notification-configuration
-  tags: Vault Notifications
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamenotificationconfiguration-get-openapi.md
-- name: Amazon Glacier API Initiate  Vault  Lock
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Initiate  Vault  Lock
+  x-api-slug: accountidvaultsvaultnamelockpolicy-post
   description: "DescriptionThis operation initiates the vault locking process by doing
     the following: Installing a vault lock policy on the specified vault.Setting the
     lock state of vault lock to InProgress.Returning a lock ID, which is used to complete
@@ -491,13 +514,14 @@ apis:
     the vault, as shown in the following syntax\n\t\t\texample."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{vaultName}/lock-policy
-  tags: Vault Locks
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamelockpolicy-post-openapi.md
-- name: Amazon Glacier API List  Vaults
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - List  Vaults
+  x-api-slug: accountidvaults-get
   description: "DescriptionThis operation lists all vaults owned by the calling user&#8217;s
     account. The list returned in\n\t\t\tthe response is ASCII-sorted by vault name.
     By default, this operation returns up to 1,000 items per request. If there are
@@ -511,13 +535,14 @@ apis:
     a GET request to the\n\t\t\t\tvaults resource."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults
-  tags: Vaults
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaults-get-openapi.md
-- name: Amazon Glacier API Set  Vault  Access  Policy
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Set  Vault  Access  Policy
+  x-api-slug: accountidvaultsvaultnameaccesspolicy-put
   description: "DescriptionThis operation configures an access policy for a vault
     and will overwrite an existing\n\t\t\tpolicy. To configure a vault access policy,
     send a PUT request to the\n\t\t\t\taccess-policy subresource of the vault. You
@@ -526,13 +551,14 @@ apis:
     Access Control with Vault Access Policies. Requests"
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{vaultName}/access-policy
-  tags: Vault Access Policies
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnameaccesspolicy-put-openapi.md
-- name: Amazon Glacier API Set  Vault  Notification  Configuration
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Set  Vault  Notification  Configuration
+  x-api-slug: accountidvaultsvaultnamenotificationconfiguration-put
   description: "DescriptionRetrieving an archive and a vault inventory are asynchronous
     operations in Amazon Glacier for which\n\t\t\tyou must first initiate a job and
     wait for the job to complete before you can download\n\t\t\tthe job output. Most
@@ -564,13 +590,14 @@ apis:
     to each topic."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/notification-configuration
-  tags: Vault Notifications
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamenotificationconfiguration-put-openapi.md
-- name: Amazon Glacier API Delete  Archive
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - Delete  Archive
+  x-api-slug: accountidvaultsvaultnamearchivesarchiveid-delete
   description: "DescriptionThis operation deletes an archive from a vault. You can
     delete one archive at a time from a vault. \n\t\t\tTo delete the archive you must
     provide its archive ID in the delete request. \n\t\t\tYou can get the archive
@@ -591,13 +618,14 @@ apis:
     an archive you send a DELETE request to the archive resource\n\t\t\tURI."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: ://///{AccountId}/vaults/{VaultName}/archives/{ArchiveID}
-  tags: Archives
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/accountidvaultsvaultnamearchivesarchiveid-delete-openapi.md
-- name: Amazon Glacier API List  Provisioned  Capacity
-  x-api-slug: amazon-glacier-api
+- name: AWS Glacier API - List  Provisioned  Capacity
+  x-api-slug: synta-syntax
   description: "List Provisioned Capacity (GET\n        provisioned-capacity)This
     operation lists the provisioned capacity for the specified AWS account.\n        Request
     SyntaxTo list the provisioned retrieval capacity for an account, send an HTTP
@@ -616,27 +644,17 @@ apis:
     the service sends back an HTTP 200 OK response."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
   humanURL: https://aws.amazon.com/glacier/
-  baseURL: :////Synta
-  tags: ~
+  baseURL: :///
+  tags: Amazon Web Services, Storage, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/synta-syntax-openapi.md
-- name: Amazon Glacier API
-  x-api-slug: amazon-glacier-api
-  description: Amazon Glacier is a secure, durable, and extremely low-cost cloud storage
-    service for data archiving and long-term backup. Customers can reliably store
-    large or small amounts of data for as little as $0.004 per gigabyte per month,
-    a significant savings compared to on-premises solutions. To keep costs low yet
-    suitable for varying retrieval needs, Amazon Glacier provides three options for
-    access to archives, from a few minutes to several hours.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png
-  humanURL: https://aws.amazon.com/glacier/
-  baseURL: :///
-  tags: AWS Glacier
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://aws.elasticsearch.service.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://aws.glacier.stack.network
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/Amazon-Glacier/
 - type: x-documentation

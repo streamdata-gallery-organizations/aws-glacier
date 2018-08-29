@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - AWS Glacier",
+	"description": "This is a repository of aws glacier APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/aws-glacier.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-29",
+	"url": "http://aws-glacier.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "AWS Glacier",
+			"x-api-slug": "aws-glacier",
+			"description": "Amazon Glacier is a secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup. Customers can reliably store large or small amounts of data for as little as $0.004 per gigabyte per month, a significant savings compared to on-premises solutions. To keep costs low yet suitable for varying retrieval needs, Amazon Glacier provides three options for access to archives, from a few minutes to several hours.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonGlacier.png",
+			"humanURL": "https://aws.amazon.com/glacier/",
+			"baseURL": ":///",
+			"tags": "AWS Glacier",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "AWS Glacier",
+	"include": [
+		{
+			"name": "AWS Glacier",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-glacier/master/_listings/aws-glacier/apis.yaml"
+		}
+	]
+}
